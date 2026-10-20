@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Annotation profile for payment-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.48/lombok-1.18.48.jar" />
+        </processorPath>
+        <module name="api-gateway" />
+        <module name="payment-service" />
+        <module name="natification-service" />
+        <module name="fraud-detection-service" />
+      </profile>
+      <profile name="Annotation profile for transaction-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="account-service" />
+        <module name="transaction-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="main" target="" />
+      <module name="main2" target="" />
+      <module name="main3" target="" />
+      <module name="main4" target="" />
+      <module name="main5" target="" />
+      <module name="main6" target="" />
+      <module name="test" target="" />
+      <module name="test2" target="" />
+      <module name="test3" target="" />
+      <module name="test4" target="" />
+      <module name="test5" target="" />
+      <module name="test6" target="" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="GENERATE_NO_WARNINGS" value="true" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-service" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="fraud-detection-service" options="-parameters" />
+      <module name="main" options="" />
+      <module name="main2" options="" />
+      <module name="main3" options="" />
+      <module name="main4" options="" />
+      <module name="main5" options="" />
+      <module name="main6" options="" />
+      <module name="natification-service" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
+      <module name="test" options="" />
+      <module name="test2" options="" />
+      <module name="test3" options="" />
+      <module name="test4" options="" />
+      <module name="test5" options="" />
+      <module name="test6" options="" />
+      <module name="transaction-service" options="-parameters" />
+    </option>
+  </component>
+</project>
